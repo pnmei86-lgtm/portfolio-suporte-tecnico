@@ -1,0 +1,20 @@
+.photo-one::before {
+  background: url("images/manutencao-interna.jpg") center / cover;
+  opacity: 1;
+}
+
+.photo-two::before {
+  background: url("images/instalacao-windows.jpg") center / cover;
+  opacity: 1;
+}
+
+.photo-three::before {
+  background: url("images/equipamentos-em-teste.jpg") center / cover;
+  opacity: 1;
+}
+
+.photo::after {
+  inset: 0;
+  border: 0;
+  background: linear-gradient(0deg, rgba(10, 18, 13, .72), transparent 58%);
+}
