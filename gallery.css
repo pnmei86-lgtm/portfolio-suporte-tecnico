@@ -1,20 +1,22 @@
-.photo-one::before {
-  background: url("images/manutencao-interna.jpg") center / cover;
-  opacity: 1;
+.gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 245px);
 }
 
-.photo-two::before {
-  background: url("images/instalacao-windows.jpg") center / cover;
-  opacity: 1;
-}
-
-.photo-three::before {
-  background: url("images/equipamentos-em-teste.jpg") center / cover;
-  opacity: 1;
-}
+.evidence::before { opacity: 1; }
+.evidence-one::before { background: url("images/limpeza-ventoinha.jpg") center / cover; }
+.evidence-two::before { background: url("images/desmontagem-teclado.jpg") center / cover; }
+.evidence-three::before { background: url("images/manutencao-interna-detalhe.jpg") center / cover; }
+.evidence-four::before { background: url("images/reparo-dobradica.jpg") center / cover; }
+.evidence-five::before { background: url("images/diagnostico-placa.jpg") center / cover; }
+.evidence-six::before { background: url("images/limpeza-dupla-ventoinha.jpg") center / cover; }
 
 .photo::after {
   inset: 0;
   border: 0;
   background: linear-gradient(0deg, rgba(10, 18, 13, .72), transparent 58%);
+}
+
+@media (max-width: 720px) {
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 220px); }
 }
